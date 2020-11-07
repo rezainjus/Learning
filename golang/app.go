@@ -5,12 +5,23 @@ import "fmt"
 // create a function that print every even numbers between 1 to 20
 
 func main() {
-	var a [5]int
-	fmt.Println("an empty array:", a)
+	s := make([]string , 3)
+	fmt.Println(s)
 
-	a[4] = 5
-	fmt.Println("not an empty array: " , a)
+	s[0] = "a"
+	s[1] = "b"
+	s[2] = "c"
+	fmt.Println(s)
+	fmt.Println(len(s))
 
-	b := [5]int{1,2,3,4,5}
-	fmt.Println(b)
+	s = append(s,"d")
+	fmt.Println(s)
+	fmt.Println(len(s))
+
+	c := make([]string, len(s))
+	copy(c,s)
+	fmt.Println("C array: " ,c)
+
+	l := s[1:3]
+	fmt.Println("sliced one:" , l)
 }
