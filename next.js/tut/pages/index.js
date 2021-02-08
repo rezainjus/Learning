@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Footer from '../comps/Footer'
 import Navbar from '../comps/Navbar'
 import styles from '../styles/Home.module.css'
+import Link from 'next/link'
 
 
 export default function Home() {
@@ -9,6 +10,9 @@ export default function Home() {
     <div>
       <Navbar />
       <h1>Homepage</h1>
+      <Link href="/lists">
+        <a> See our lists</a>
+      </Link>
       <Footer />
     </div>
 

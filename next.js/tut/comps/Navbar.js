@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 const Navbar = () => {
     return ( 
         <div>
@@ -5,10 +7,9 @@ const Navbar = () => {
                 <div className="logo">
                     <h1>Reza Aghajani</h1>
                 </div>
-
-                <a href="#">Home</a>
-                <a href="/about">About</a>
-                <a href="/lists">Lists</a>
+                <Link href="/"><a>Home</a></Link>
+                <Link href="/about"><a>About</a></Link>
+                <Link href="/lists"><a>Lists</a></Link>
             </nav>
         </div>
      );
