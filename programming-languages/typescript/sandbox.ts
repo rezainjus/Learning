@@ -1,24 +1,30 @@
+// explicit types
+let character: string 
+let age: number
+let isLoggedIn: boolean 
+
 // arrays
+let ninjas: string[] = []
 
-let names = ['luigi','mario','yoshi']
+ninjas.push('test')
 
-names.push('toad')
-// names.push(3)
+// union types
 
-let mixed = ['ken',3,4,'reza']
-mixed.push(5)
+let mixed: (string|number)[] = []
+
 mixed.push('test')
-mixed[0] = 'ahmad'
+mixed.push(30)
 
 console.log(mixed)
 
+let uid = string|number 
+
+
 // objects
-let ninja = {
-    name: 'mario',
-    belt: 'black',
-    age: 20
+let ninjaOne: object;
+ninjaOne = {name: 'test' , age:18}
+
+let ninjaTwo: {
+    name: string,
+    age: number
 }
-
-ninja.age = 40
-
-console.log(ninja.age)
