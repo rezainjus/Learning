@@ -1,5 +1,6 @@
 "use strict";
-var printOut = function (char) {
-    console.log(char);
+var greet;
+greet = function (name, greeting) {
+    console.log(name + " says " + greeting);
 };
-printOut(8);
+greet('Reza', 'Whatsup ma boyyyyyy!');

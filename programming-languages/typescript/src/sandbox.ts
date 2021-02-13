@@ -1,8 +1,7 @@
-type StringOrNum = string|number 
+let greet: (a: string, b: string) => void 
 
-
-const printOut = (char: StringOrNum) => {
-    console.log(char) 
+greet = (name: string, greeting: string) => {
+    console.log(`${name} says ${greeting}`)
 }
 
-printOut(8)
+greet('Reza','Whatsup ma boyyyyyy!')
