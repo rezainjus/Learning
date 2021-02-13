@@ -6,3 +6,4 @@ age = true
 age = 'hello'
 
 let mixed: any[] = []
+console.log('test')
