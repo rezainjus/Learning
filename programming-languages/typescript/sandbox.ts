@@ -1,30 +1,8 @@
-// explicit types
-let character: string 
-let age: number
-let isLoggedIn: boolean 
+// dynamic types
 
-// arrays
-let ninjas: string[] = []
+let age: any = 25
 
-ninjas.push('test')
+age = true
+age = 'hello'
 
-// union types
-
-let mixed: (string|number)[] = []
-
-mixed.push('test')
-mixed.push(30)
-
-console.log(mixed)
-
-let uid = string|number 
-
-
-// objects
-let ninjaOne: object;
-ninjaOne = {name: 'test' , age:18}
-
-let ninjaTwo: {
-    name: string,
-    age: number
-}
+let mixed: any[] = []
