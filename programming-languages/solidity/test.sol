@@ -1,11 +1,18 @@
 pragma solidity >=0.5.16;
-contract MyFirstContract {
-    string private name;
-    function setName(string newName) public {
-        name = newName;
+contract ZombieFactory {
+
+    uint dnaDigits = 16;
+    uint dnaModulus = 10 ** dnaDigits;
+
+    struct Zombie {
+        string name;
+        uint dna;
     }
 
-    function getName() public returns (string) {
-        return name;
+    Zombie[] public zombies;
+
+    function createZombie(string memory _name, uint _dna) public {
+        zombies.push(Zombie(_name, _dna));
     }
+
 }
