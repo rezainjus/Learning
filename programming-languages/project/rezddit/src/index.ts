@@ -1,1 +1,1 @@
-import {MikroORM} from "@mikro-orm/core"
+import { MikroORM } from "@mikro-orm/core"
