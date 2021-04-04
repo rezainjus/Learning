@@ -1,1 +1,1 @@
-console.log("Hello Reza")
+import {MikroORM} from "@mikro-orm/core"

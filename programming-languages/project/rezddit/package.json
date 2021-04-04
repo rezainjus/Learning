@@ -19,6 +19,7 @@
   },
   "dependencies": {
     "@mikro-orm/cli": "^4.5.1",
+    "@mikro-orm/core": "^4.5.1",
     "@mikro-orm/migrations": "^4.5.1",
     "@mikro-orm/postgresql": "^4.5.1",
     "pg": "^8.5.1"
