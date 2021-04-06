@@ -3,9 +3,11 @@ const app = express()
 const port = 6985
 const logger = require('morgan')
 
+const about = require('./routes/about')
+
 app.use(logger('dev'))
 
-const about = require('./routes/about')
+app.use('/test',express.static('test'))
 
 app.get('/',(req,res) => {
     res.send("Hello World")
