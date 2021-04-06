@@ -1,12 +1,15 @@
-const http = require("http")
-
-const hostname =  '127.0.0.1'
+const express = require('express')
+const app = express()
 const port = 6985
 
-const server = http.createServer((req,res) => {
-    res.end('Hello World!')
+const about = require('./routes/about')
+
+app.get('/',(req,res) => {
+    res.send("Hello World")
 })
 
-server.listen(port,hostname,() => {
-    console.log(`Server running at http://${hostname}:${port}`)
+app.listen(port,() => {
+    console.log('Server running at http://localhost:6985')
 })
+
+app.use('/about',about)
