@@ -1,6 +1,9 @@
 const express = require('express')
 const app = express()
 const port = 6985
+const logger = require('morgan')
+
+app.use(logger('dev'))
 
 const about = require('./routes/about')
 
